@@ -1,0 +1,109 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\Task1ASP\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{39CF653C-CA5C-4CDA-9170-D78013D0EBA5}|Task1ASP\\Task1ASP.csproj|c:\\users\\user\\desktop\\task1asp\\task1asp\\views\\cafeteria\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{39CF653C-CA5C-4CDA-9170-D78013D0EBA5}|Task1ASP\\Task1ASP.csproj|solutionrelative:task1asp\\views\\cafeteria\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39CF653C-CA5C-4CDA-9170-D78013D0EBA5}|Task1ASP\\Task1ASP.csproj|c:\\users\\user\\desktop\\task1asp\\task1asp\\views\\cafeteria\\supplystatus.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{39CF653C-CA5C-4CDA-9170-D78013D0EBA5}|Task1ASP\\Task1ASP.csproj|solutionrelative:task1asp\\views\\cafeteria\\supplystatus.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39CF653C-CA5C-4CDA-9170-D78013D0EBA5}|Task1ASP\\Task1ASP.csproj|c:\\users\\user\\desktop\\task1asp\\task1asp\\views\\cafeteria\\suppliers.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{39CF653C-CA5C-4CDA-9170-D78013D0EBA5}|Task1ASP\\Task1ASP.csproj|solutionrelative:task1asp\\views\\cafeteria\\suppliers.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39CF653C-CA5C-4CDA-9170-D78013D0EBA5}|Task1ASP\\Task1ASP.csproj|c:\\users\\user\\desktop\\task1asp\\task1asp\\views\\cafeteria\\products.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{39CF653C-CA5C-4CDA-9170-D78013D0EBA5}|Task1ASP\\Task1ASP.csproj|solutionrelative:task1asp\\views\\cafeteria\\products.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39CF653C-CA5C-4CDA-9170-D78013D0EBA5}|Task1ASP\\Task1ASP.csproj|c:\\users\\user\\desktop\\task1asp\\task1asp\\controllers\\cafeteriacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39CF653C-CA5C-4CDA-9170-D78013D0EBA5}|Task1ASP\\Task1ASP.csproj|solutionrelative:task1asp\\controllers\\cafeteriacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SupplyStatus.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Task1ASP\\Task1ASP\\Views\\Cafeteria\\SupplyStatus.cshtml",
+              "RelativeDocumentMoniker": "Task1ASP\\Views\\Cafeteria\\SupplyStatus.cshtml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Task1ASP\\Task1ASP\\Views\\Cafeteria\\SupplyStatus.cshtml",
+              "RelativeToolTip": "Task1ASP\\Views\\Cafeteria\\SupplyStatus.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-01T11:30:02.735Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Suppliers.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Task1ASP\\Task1ASP\\Views\\Cafeteria\\Suppliers.cshtml",
+              "RelativeDocumentMoniker": "Task1ASP\\Views\\Cafeteria\\Suppliers.cshtml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Task1ASP\\Task1ASP\\Views\\Cafeteria\\Suppliers.cshtml",
+              "RelativeToolTip": "Task1ASP\\Views\\Cafeteria\\Suppliers.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-01T11:29:48.535Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Products.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Task1ASP\\Task1ASP\\Views\\Cafeteria\\Products.cshtml",
+              "RelativeDocumentMoniker": "Task1ASP\\Views\\Cafeteria\\Products.cshtml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Task1ASP\\Task1ASP\\Views\\Cafeteria\\Products.cshtml",
+              "RelativeToolTip": "Task1ASP\\Views\\Cafeteria\\Products.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-01T11:29:27.823Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Task1ASP\\Task1ASP\\Views\\Cafeteria\\Index.cshtml",
+              "RelativeDocumentMoniker": "Task1ASP\\Views\\Cafeteria\\Index.cshtml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Task1ASP\\Task1ASP\\Views\\Cafeteria\\Index.cshtml",
+              "RelativeToolTip": "Task1ASP\\Views\\Cafeteria\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-01T11:24:57.593Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CafeteriaController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Task1ASP\\Task1ASP\\Controllers\\CafeteriaController.cs",
+              "RelativeDocumentMoniker": "Task1ASP\\Controllers\\CafeteriaController.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Task1ASP\\Task1ASP\\Controllers\\CafeteriaController.cs",
+              "RelativeToolTip": "Task1ASP\\Controllers\\CafeteriaController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-01T11:21:36.595Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
