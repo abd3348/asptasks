@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\Desktop\\Task1ASP\\Task1ASP\\Task1ASP.csproj": {}
+    "C:\\Users\\user\\Desktop\\asptasks\\asptasks\\Task1ASP\\Task1ASP\\Task1ASP.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\Desktop\\Task1ASP\\Task1ASP\\Task1ASP.csproj": {
+    "C:\\Users\\user\\Desktop\\asptasks\\asptasks\\Task1ASP\\Task1ASP\\Task1ASP.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Desktop\\Task1ASP\\Task1ASP\\Task1ASP.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Desktop\\asptasks\\asptasks\\Task1ASP\\Task1ASP\\Task1ASP.csproj",
         "projectName": "Task1ASP",
-        "projectPath": "C:\\Users\\user\\Desktop\\Task1ASP\\Task1ASP\\Task1ASP.csproj",
+        "projectPath": "C:\\Users\\user\\Desktop\\asptasks\\asptasks\\Task1ASP\\Task1ASP\\Task1ASP.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Desktop\\Task1ASP\\Task1ASP\\obj\\",
+        "outputPath": "C:\\Users\\user\\Desktop\\asptasks\\asptasks\\Task1ASP\\Task1ASP\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,0 +1,21 @@
+﻿body {
+    background-color: #f0f8ff;
+}
+
+h2 {
+    color: darkblue;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.product-list {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+    .product-list li {
+        color: #333;
+        padding: 8px;
+        font-size: 18px;
+    }

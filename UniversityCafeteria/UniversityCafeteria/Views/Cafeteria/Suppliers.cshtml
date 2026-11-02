@@ -1,0 +1,27 @@
+﻿@{
+    Layout = "_SimpleLayout";
+
+    string[] suppliers = {
+        "Fresh Food Company",
+        "Happy Drinks Company",
+        "Daily Supplies Company"
+    };
+}
+
+<h2>Welcome Suppliers</h2>
+
+<ul>
+    @foreach (var supplier in suppliers)
+    {
+        <li>@supplier</li>
+    }
+</ul>
+
+@if (suppliers.Length >= 3)
+{
+    <p>We have enough suppliers.</p>
+}
+else
+{
+    <p>We need more suppliers.</p>
+}
