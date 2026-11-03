@@ -1,0 +1,16 @@
+﻿<div class="container mt-5">
+
+    <h2>Product Categories</h2>
+
+    <ul class="list-group">
+
+        @foreach (string category in ViewBag.Categories)
+        {
+            <li class="list-group-item">
+                @category
+            </li>
+        }
+
+    </ul>
+
+</div>

@@ -1,0 +1,35 @@
+﻿@{
+    string[] products = (string[])ViewData["Products"]!;
+}
+
+<div class="container mt-5">
+
+    <h1 class="text-center mb-4">
+        @ViewData["Title"]
+    </h1>
+
+    <div class="card mb-4 shadow-sm">
+        <div class="card-body">
+            <h5>Manager: @ViewData["Manager"]</h5>
+            <p>Total Products: @ViewData["Count"]</p>
+        </div>
+    </div>
+
+    <div class="row g-3">
+
+        @foreach (string product in products)
+        {
+            <div class="col-md-4">
+                <div class="card shadow-sm h-100">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">
+                            @product
+                        </h5>
+                    </div>
+                </div>
+            </div>
+        }
+
+    </div>
+
+</div>

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\Desktop\\UniversityCafeteria\\UniversityCafeteria\\UniversityCafeteria.csproj": {}
+    "C:\\Users\\user\\Desktop\\asptasks\\asptasks\\UniversityCafeteria\\UniversityCafeteria\\UniversityCafeteria.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\Desktop\\UniversityCafeteria\\UniversityCafeteria\\UniversityCafeteria.csproj": {
+    "C:\\Users\\user\\Desktop\\asptasks\\asptasks\\UniversityCafeteria\\UniversityCafeteria\\UniversityCafeteria.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Desktop\\UniversityCafeteria\\UniversityCafeteria\\UniversityCafeteria.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Desktop\\asptasks\\asptasks\\UniversityCafeteria\\UniversityCafeteria\\UniversityCafeteria.csproj",
         "projectName": "UniversityCafeteria",
-        "projectPath": "C:\\Users\\user\\Desktop\\UniversityCafeteria\\UniversityCafeteria\\UniversityCafeteria.csproj",
+        "projectPath": "C:\\Users\\user\\Desktop\\asptasks\\asptasks\\UniversityCafeteria\\UniversityCafeteria\\UniversityCafeteria.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Desktop\\UniversityCafeteria\\UniversityCafeteria\\obj\\",
+        "outputPath": "C:\\Users\\user\\Desktop\\asptasks\\asptasks\\UniversityCafeteria\\UniversityCafeteria\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
