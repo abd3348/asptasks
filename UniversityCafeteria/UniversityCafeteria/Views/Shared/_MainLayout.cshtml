@@ -20,11 +20,27 @@
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <h1>UniversityCafeteria</h1>
-                    <a asp-controller="Supply" asp-action="Index">Index</a>
-                    <a asp-controller="Supply" asp-action="Products">Products</a>
-                    <a asp-controller="Supply" asp-action="Suppliers">Suppliers</a>
-                    <a asp-controller="Supply" asp-action="CreateRequest">Create Request</a>
-                    <a asp-controller="Supply" asp-action="About">About</a>
+                    <a href="@Url.Action("Index", "Cafeteria")">Home</a>
+
+                    <a href="@Url.Action("Products", "Cafeteria")">Products</a>
+
+                    <a href="@Url.Action("Suppliers", "Cafeteria")">Suppliers</a>
+
+                    <a href="@Url.Action("Index", "SupplyRequest")">
+                        Create Supply Request
+                    </a>
+
+                    <a href="@Url.Action("Review", "SupplyRequest")">
+                        Review Draft
+                    </a>
+
+                    <a href="@Url.Action("MyRequests", "SupplyRequest")">
+                        My Requests
+                    </a>
+
+                    <a href="@Url.Action("About", "SupplyRequest")">
+                        About
+                    </a>
                 </div>
             </div>
         </nav>

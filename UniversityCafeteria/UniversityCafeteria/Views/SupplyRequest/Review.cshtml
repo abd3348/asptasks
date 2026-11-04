@@ -1,0 +1,61 @@
+﻿@using System.Globalization
+
+@{
+    List<string[]> products = ViewBag.Products;
+}
+
+<h2>Review Supply Request</h2>
+
+@if (TempData["Error"] != null)
+{
+    <p class="text-danger">@TempData["Error"]</p>
+}
+
+@if (products.Count == 0)
+{
+    <p>No products in your request.</p>
+}
+else
+{
+    <table class="table table-bordered">
+        <tr>
+            <th>Product</th>
+            <th>Category</th>
+            <th>Quantity</th>
+            <th>Unit Price</th>
+            <th>Total</th>
+            <th>Priority</th>
+        </tr>
+
+        @foreach (var product in products)
+        {
+            decimal total = int.Parse(product[2]) *
+                decimal.Parse(product[3],
+                    CultureInfo.InvariantCulture);
+
+            <tr>
+                <td>@product[0]</td>
+                <td>@product[1]</td>
+                <td>@product[2]</td>
+                <td>@product[3]</td>
+                <td>@total JD</td>
+                <td>@product[4]</td>
+            </tr>
+        }
+    </table>
+
+    <h4>Subtotal: @ViewBag.Subtotal JD</h4>
+    <h4>Preparation Fee (@ViewBag.Priority): @ViewBag.Fee JD</h4>
+    <h4>Discount: @ViewBag.Discount JD</h4>
+    <h3>Final Total: @ViewBag.FinalTotal JD</h3>
+
+    <form method="post"
+          action="@Url.Action("ConfirmRequest", "SupplyRequest")">
+        <button type="submit">Confirm Request</button>
+    </form>
+}
+
+<form method="post"
+      action="@Url.Action("ClearDraft", "SupplyRequest")">
+    <button type="submit">Clear Draft</button>
+</form>

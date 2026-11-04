@@ -1,0 +1,61 @@
+﻿@{
+    string preferred = ViewBag.PreferredPriority;
+}
+
+<h2>Create Supply Request</h2>
+
+@if (TempData["Error"] != null)
+{
+    <p class="text-danger">@TempData["Error"]</p>
+}
+
+<form method="post" action="@Url.Action("AddItem", "SupplyRequest")">
+
+    <label>Product Name</label>
+    <input type="text" name="ProductName" required />
+
+    <label>Category</label>
+    <input type="text" name="Category" />
+
+    <label>Quantity</label>
+    <input type="number" name="Quantity"
+           min="1" required />
+
+    <label>Unit Price</label>
+    <input type="number" name="UnitPrice"
+           min="0.01" step="0.01" required />
+
+    <label>Priority</label>
+    <select name="Priority">
+        <option value="Normal"
+                selected="@(preferred == "Normal")">Normal</option>
+        <option value="Urgent"
+                selected="@(preferred == "Urgent")">Urgent</option>
+        <option value="Emergency"
+                selected="@(preferred == "Emergency")">Emergency</option>
+    </select>
+
+    <button type="submit">Add Item</button>
+</form>
+
+<hr />
+
+<h3>Preferred Priority</h3>
+
+<p>Your preferred request priority is @preferred.</p>
+
+<form method="post"
+      action="@Url.Action("SavePreference", "SupplyRequest")">
+
+    <select name="Priority">
+        <option value="Normal">Normal</option>
+        <option value="Urgent">Urgent</option>
+        <option value="Emergency">Emergency</option>
+    </select>
+
+    <button type="submit">Save Preference</button>
+</form>
+
+<a href="@Url.Action("Review", "SupplyRequest")">
+    Review Draft
+</a>

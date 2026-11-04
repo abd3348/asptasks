@@ -1,0 +1,32 @@
+﻿@{
+    List<string> requests = ViewBag.Requests;
+}
+
+<h2>My Supply Requests</h2>
+
+<table class="table table-bordered">
+    <tr>
+        <th>Request ID</th>
+        <th>Products</th>
+        <th>Subtotal</th>
+        <th>Fee</th>
+        <th>Discount</th>
+        <th>Final Total</th>
+        <th>Status</th>
+    </tr>
+
+    @foreach (string request in requests)
+    {
+        string[] data = request.Split('|');
+
+        <tr>
+            <td>@data[0]</td>
+            <td>@data[1]</td>
+            <td>@data[2] JD</td>
+            <td>@data[3] JD</td>
+            <td>@data[4] JD</td>
+            <td>@data[5] JD</td>
+            <td>@data[6]</td>
+        </tr>
+    }
+</table>
