@@ -1,0 +1,52 @@
+﻿@using Task4.Models
+@{
+    ViewData["Title"] = "Create Supply Request";
+    var offers = (List<SelectedOfferViewModel>)ViewBag.Offers;
+    var selected = (List<SelectedOfferViewModel>)ViewBag.SelectedOffers;
+    var categories = offers.Select(o => o.CategoryName).Distinct();
+}
+
+<h1>Create Supply Request</h1>
+
+@if (TempData["Message"] != null)
+{
+    <p class="text-danger">@TempData["Message"]</p>
+}
+
+@foreach (var category in categories)
+{
+    <h2>@category</h2>
+
+    <div class="row">
+        @for (var i = 0; i < offers.Count; i++)
+        {
+            var offer = offers[i];
+            if (offer.CategoryName != category) { continue; }
+
+            <div class="col-md-4 mb-3">
+                <div class="card p-3">
+                    <h3>@offer.SupplierName</h3>
+                    <p>@offer.OfferName</p>
+                    <p>Quantity: @offer.Quantity</p>
+                    <p>Unit price: @offer.UnitPrice JD</p>
+
+                    <form asp-action="SelectOffer" method="post">
+                        @Html.AntiForgeryToken()
+                        <input type="hidden" name="offerIndex" value="@i" />
+                        <button class="btn btn-primary" type="submit">
+                            Select this offer
+                        </button>
+                    </form>
+                </div>
+            </div>
+        }
+    </div>
+
+    <p>
+        Selected:
+        @(selected.FirstOrDefault(o => o.CategoryName == category)?.OfferName
+          ?? "No offer selected")
+    </p>
+}
+
+<a class="btn btn-success" asp-action="Review">Review Request</a>

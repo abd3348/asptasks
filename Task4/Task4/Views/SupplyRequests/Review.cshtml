@@ -1,0 +1,45 @@
+﻿@model List<Task4.Models.SelectedOfferViewModel>
+
+@{
+    ViewData["Title"] = "Review Request";
+}
+
+<h1>Review Request</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Category</th>
+            <th>Supplier</th>
+            <th>Offer</th>
+            <th>Quantity</th>
+            <th>Unit Price</th>
+            <th>Total Price</th>
+            <th>Discount</th>
+            <th>Discount Amount</th>
+            <th>Final Total</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var offer in Model)
+        {
+            <tr>
+                <td>@offer.CategoryName</td>
+                <td>@offer.SupplierName</td>
+                <td>@offer.OfferName</td>
+                <td>@offer.Quantity</td>
+                <td>@offer.UnitPrice JD</td>
+                <td>@offer.TotalPrice JD</td>
+                <td>@offer.DiscountPercentage%</td>
+                <td>@offer.DiscountAmount JD</td>
+                <td>@offer.FinalTotal JD</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<p>Total before discount: @ViewBag.GrandTotal JD</p>
+<p>Total discount: @ViewBag.TotalDiscount JD</p>
+<h2>Final total: @ViewBag.FinalTotal JD</h2>
+
+<a asp-action="Create">Back to offers</a>
