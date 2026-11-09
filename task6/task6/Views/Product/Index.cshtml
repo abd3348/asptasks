@@ -1,0 +1,32 @@
+﻿@model List<Product>
+
+<h2>Products</h2>
+
+<a asp-action="Create">Add New Product</a>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Category</th>
+            <th>Supplier</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.Name</td>
+                <td>@item.Price</td>
+                <td>@item.Quantity</td>
+                <td>@item.Category?.Name</td>
+                <td>@item.Supplier?.Name</td>
+            </tr>
+        }
+    </tbody>
+</table>

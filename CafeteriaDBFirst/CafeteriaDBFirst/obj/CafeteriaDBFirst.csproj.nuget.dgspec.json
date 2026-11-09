@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\Desktop\\CafeteriaDBFirst\\CafeteriaDBFirst\\CafeteriaDBFirst.csproj": {}
+    "C:\\Users\\user\\Desktop\\asptasks\\asptasks\\CafeteriaDBFirst\\CafeteriaDBFirst\\CafeteriaDBFirst.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\Desktop\\CafeteriaDBFirst\\CafeteriaDBFirst\\CafeteriaDBFirst.csproj": {
+    "C:\\Users\\user\\Desktop\\asptasks\\asptasks\\CafeteriaDBFirst\\CafeteriaDBFirst\\CafeteriaDBFirst.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Desktop\\CafeteriaDBFirst\\CafeteriaDBFirst\\CafeteriaDBFirst.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Desktop\\asptasks\\asptasks\\CafeteriaDBFirst\\CafeteriaDBFirst\\CafeteriaDBFirst.csproj",
         "projectName": "CafeteriaDBFirst",
-        "projectPath": "C:\\Users\\user\\Desktop\\CafeteriaDBFirst\\CafeteriaDBFirst\\CafeteriaDBFirst.csproj",
+        "projectPath": "C:\\Users\\user\\Desktop\\asptasks\\asptasks\\CafeteriaDBFirst\\CafeteriaDBFirst\\CafeteriaDBFirst.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Desktop\\CafeteriaDBFirst\\CafeteriaDBFirst\\obj\\",
+        "outputPath": "C:\\Users\\user\\Desktop\\asptasks\\asptasks\\CafeteriaDBFirst\\CafeteriaDBFirst\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

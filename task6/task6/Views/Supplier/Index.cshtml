@@ -1,0 +1,28 @@
+﻿@model List<Supplier>
+
+<h2>Suppliers</h2>
+
+<a asp-action="Create">Add New Supplier</a>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Phone</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.Name</td>
+                <td>@item.Phone</td>
+                <td>@item.Email</td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4rXfsp4A3mI=",
+  "dgSpecHash": "9nm+yF0BF5E=",
   "success": true,
-  "projectFilePath": "C:\\Users\\user\\Desktop\\CafeteriaDBFirst\\CafeteriaDBFirst\\CafeteriaDBFirst.csproj",
+  "projectFilePath": "C:\\Users\\user\\Desktop\\asptasks\\asptasks\\CafeteriaDBFirst\\CafeteriaDBFirst\\CafeteriaDBFirst.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\azure.core\\1.50.0\\azure.core.1.50.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\azure.identity\\1.17.1\\azure.identity.1.17.1.nupkg.sha512",
