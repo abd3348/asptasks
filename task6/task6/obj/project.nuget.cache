@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qsw0+5aPL8Q=",
+  "dgSpecHash": "Upoo27iPaRI=",
   "success": true,
-  "projectFilePath": "C:\\Users\\user\\Desktop\\task6\\task6\\task6.csproj",
+  "projectFilePath": "C:\\Users\\user\\Desktop\\asptasks\\asptasks\\task6\\task6\\task6.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\azure.core\\1.50.0\\azure.core.1.50.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\azure.identity\\1.17.1\\azure.identity.1.17.1.nupkg.sha512",

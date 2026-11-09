@@ -1,0 +1,50 @@
+﻿@model Employee
+
+<h2>Employee Details</h2>
+
+<table class="table table-bordered">
+    <tr>
+        <th>Id</th>
+        <td>@Model.Id</td>
+    </tr>
+
+    <tr>
+        <th>Full Name</th>
+        <td>@Model.FullName</td>
+    </tr>
+
+    <tr>
+        <th>Phone</th>
+        <td>@Model.Phone</td>
+    </tr>
+
+    <tr>
+        <th>Email</th>
+        <td>@Model.Email</td>
+    </tr>
+
+    <tr>
+        <th>Position</th>
+        <td>@Model.Position</td>
+    </tr>
+
+    <tr>
+        <th>Salary</th>
+        <td>@Model.Salary</td>
+    </tr>
+
+    <tr>
+        <th>Hire Date</th>
+        <td>@Model.HireDate.ToShortDateString()</td>
+    </tr>
+
+    <tr>
+        <th>Orders Count</th>
+        <td>@Model.Orders.Count()</td>
+    </tr>
+</table>
+
+<a asp-action="Edit" asp-route-id="@Model.Id"
+   class="btn btn-primary">Edit</a>
+
+<a asp-action="Index" class="btn btn-secondary">Back</a>

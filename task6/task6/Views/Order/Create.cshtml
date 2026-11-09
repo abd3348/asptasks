@@ -1,0 +1,47 @@
+﻿@model Order
+
+<h2>Create Order</h2>
+
+@using (Html.BeginForm())
+{
+    <div class="mb-3">
+        @Html.LabelFor(m => m.CustomerName)
+        @Html.TextBoxFor(m => m.CustomerName,
+            new { @class = "form-control" })
+    </div>
+
+    <div class="mb-3">
+        @Html.LabelFor(m => m.OrderDate)
+        @Html.TextBoxFor(m => m.OrderDate, "{0:yyyy-MM-dd}",
+            new { @class = "form-control", type = "date" })
+    </div>
+
+    <div class="mb-3">
+        @Html.LabelFor(m => m.TotalPrice)
+        @Html.TextBoxFor(m => m.TotalPrice,
+            new { @class = "form-control" })
+    </div>
+
+    <div class="mb-3">
+        @Html.LabelFor(m => m.Status)
+        @Html.TextBoxFor(m => m.Status,
+            new { @class = "form-control" })
+    </div>
+
+    <div class="mb-3">
+        <label>Employee</label>
+
+        <select asp-for="EmployeeId" class="form-control">
+            <option value="">Select Employee</option>
+
+            @foreach (var item in ViewBag.Employees)
+            {
+                <option value="@item.Id">@item.FullName</option>
+            }
+        </select>
+    </div>
+
+    <button type="submit" class="btn btn-success">Save</button>
+
+    <a asp-action="Index" class="btn btn-secondary">Back</a>
+}

@@ -1,0 +1,27 @@
+﻿@model Category
+
+<h2>User Details</h2>
+
+<div>
+    <p>
+        <strong>Id:</strong>
+        @Model.Id
+    </p>
+
+    <p>
+        <strong>Name:</strong>
+        @Model.Name
+    </p>
+
+    <p>
+        <strong>Description:</strong>
+        @Model.Description
+    </p>
+</div>
+
+<a asp-action="Index">Back to List</a>
+
+<a asp-action="Edit"
+   asp-route-id="@Model.Id">
+    Edit
+</a>

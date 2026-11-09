@@ -1,0 +1,40 @@
+﻿@model Order
+
+<h2>Order Details</h2>
+
+<table class="table table-bordered">
+    <tr>
+        <th>Id</th>
+        <td>@Model.Id</td>
+    </tr>
+
+    <tr>
+        <th>Customer Name</th>
+        <td>@Model.CustomerName</td>
+    </tr>
+
+    <tr>
+        <th>Order Date</th>
+        <td>@Model.OrderDate</td>
+    </tr>
+
+    <tr>
+        <th>Total Price</th>
+        <td>@Model.TotalPrice</td>
+    </tr>
+
+    <tr>
+        <th>Status</th>
+        <td>@Model.Status</td>
+    </tr>
+
+    <tr>
+        <th>Employee</th>
+        <td>@Model.Employee.FullName</td>
+    </tr>
+</table>
+
+<a asp-action="Edit" asp-route-id="@Model.Id"
+   class="btn btn-primary">Edit</a>
+
+<a asp-action="Index" class="btn btn-secondary">Back</a>

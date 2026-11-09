@@ -4524,11 +4524,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\Desktop\\task6\\task6\\task6.csproj",
+      "projectUniqueName": "C:\\Users\\user\\Desktop\\asptasks\\asptasks\\task6\\task6\\task6.csproj",
       "projectName": "task6",
-      "projectPath": "C:\\Users\\user\\Desktop\\task6\\task6\\task6.csproj",
+      "projectPath": "C:\\Users\\user\\Desktop\\asptasks\\asptasks\\task6\\task6\\task6.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\Desktop\\task6\\task6\\obj\\",
+      "outputPath": "C:\\Users\\user\\Desktop\\asptasks\\asptasks\\task6\\task6\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
