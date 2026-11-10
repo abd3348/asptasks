@@ -1,0 +1,46 @@
+@model IEnumerable<SupplyRequest>
+
+@{
+    ViewData["Title"] = "Supply Requests";
+    var isAdmin = User.IsInRole("Admin") || User.IsInRole("SuperAdmin");
+}
+
+<div class="d-flex justify-content-between align-items-center mb-3">
+    <h1>Supply Requests</h1>
+    <a asp-action="Create" class="btn btn-primary">New Request</a>
+</div>
+
+<table class="table table-striped align-middle">
+    <thead>
+        <tr>
+            <th>Date</th>
+            @if (isAdmin) { <th>User</th> }
+            <th>Items</th>
+            <th>Total</th>
+            <th>Status</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var request in Model)
+        {
+            <tr>
+                <td>@request.RequestDate.ToLocalTime().ToString("yyyy-MM-dd HH:mm")</td>
+                @if (isAdmin) { <td>@request.User.FullName<br /><small>@request.User.Email</small></td> }
+                <td>@request.RequestItems.Count</td>
+                <td>@request.TotalPrice.ToString("C")</td>
+                <td><span class="badge bg-@(request.Status == SupplyRequest.Approved ? "success" : request.Status == SupplyRequest.Rejected ? "danger" : "warning text-dark")">@request.Status</span></td>
+                <td class="text-end">
+                    <a asp-action="Details" asp-route-id="@request.Id" class="btn btn-outline-info btn-sm">Details</a>
+                    @if (isAdmin || request.Status == SupplyRequest.Pending)
+                    {
+                        <a asp-action="Edit" asp-route-id="@request.Id" class="btn btn-outline-primary btn-sm">Edit</a>
+                        <form asp-action="Delete" asp-route-id="@request.Id" method="post" class="d-inline">
+                            <button type="submit" class="btn btn-outline-danger btn-sm" onclick="return confirm('Delete this request?')">Delete</button>
+                        </form>
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

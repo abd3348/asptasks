@@ -1,54 +1,15 @@
-﻿@model Product
+@model Product
 
-<h2>Product Details</h2>
+@{
+    ViewData["Title"] = "Product Details";
+}
 
-<table class="table table-bordered">
-    <tr>
-        <th>Id</th>
-        <td>@Model.Id</td>
-    </tr>
-
-    <tr>
-        <th>Name</th>
-        <td>@Model.Name</td>
-    </tr>
-
-    <tr>
-        <th>Price</th>
-        <td>@Model.Price</td>
-    </tr>
-
-    <tr>
-        <th>Quantity</th>
-        <td>@Model.Quantity</td>
-    </tr>
-
-    <tr>
-        <th>Category</th>
-        <td>@Model.Category.Name</td>
-    </tr>
-
-    <tr>
-        <th>Supplier</th>
-        <td>@Model.Supplier.Name</td>
-    </tr>
-
-    <tr>
-        <th>Status</th>
-        <td>
-            @if (Model.Quantity < 5)
-            {
-                <span class="text-danger">Low Stock</span>
-            }
-            else
-            {
-                <span class="text-success">Available</span>
-            }
-        </td>
-    </tr>
-</table>
-
-<a asp-action="Edit" asp-route-id="@Model.Id"
-   class="btn btn-primary">Edit</a>
-
+<h1>@Model.Name</h1>
+<dl class="row">
+    <dt class="col-sm-3">Description</dt><dd class="col-sm-9">@Model.Description</dd>
+    <dt class="col-sm-3">Price</dt><dd class="col-sm-9">@Model.Price.ToString("C")</dd>
+    <dt class="col-sm-3">Available Quantity</dt><dd class="col-sm-9">@Model.Quantity</dd>
+    <dt class="col-sm-3">Category</dt><dd class="col-sm-9">@(Model.Category?.Name ?? "-")</dd>
+    <dt class="col-sm-3">Supplier</dt><dd class="col-sm-9">@(Model.Supplier?.Name ?? "-")</dd>
+</dl>
 <a asp-action="Index" class="btn btn-secondary">Back</a>

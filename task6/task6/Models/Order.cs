@@ -8,6 +8,6 @@
         public int TotalPrice { get; set; }
         public int Status { get; set; }
         public int EmployeeId { get; set; }
-        public Employee Employee { get; set; }
+        public Employee Employee { get; set; } = null!;
     }
 }

@@ -1,0 +1,15 @@
+@model task6.Models.ViewModels.SupplyRequestFormViewModel
+
+@{
+    ViewData["Title"] = "Create Supply Request";
+}
+
+<h1>Create Supply Request</h1>
+<form asp-action="Create" method="post">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <partial name="_RequestItemsForm" model="Model" />
+    <button type="submit" class="btn btn-primary">Submit Request</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+</form>
+
+@section Scripts { <partial name="_ValidationScriptsPartial" /> }
